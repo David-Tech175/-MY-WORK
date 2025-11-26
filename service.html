@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Services | Coding Therapy Academy</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="home-page-style.css" />
+</head>
+<body>
+
+  <!-- Top Contact Bar -->
+  <div class="top-bar d-flex justify-content-between align-items-center p-2 bg-light border-bottom">
+    <div class="fw-bold">📞 Call us: +234 801 234 5678</div>
+    <div class="social-icons d-flex gap-3">
+      <a href="#" onclick="showPopup('Facebook')"><i class="bi bi-facebook text-primary fs-4"></i></a>
+      <a href="#" onclick="showPopup('Twitter')"><i class="bi bi-twitter text-info fs-4"></i></a>
+      <a href="#" onclick="showPopup('Instagram')"><i class="bi bi-instagram text-danger fs-4"></i></a>
+      <a href="#" onclick="showPopup('YouTube')"><i class="bi bi-youtube text-danger fs-4"></i></a>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="CTA LOGO.jpg" alt="Logo" width="80" height="80" class="me-2" />
+      <div class="text-white">
+        <strong>CODING THERAPY ACADEMY</strong><br />
+        <em>...the dosage that feels good...</em>
+      </div>
+    </a>
+    <div class="ms-auto d-flex gap-3">
+      <a class="nav-link text-white" href="index.html">Home</a>
+      <a class="nav-link text-white" href="about.html">About</a>
+      <a class="nav-link text-white active" href="service.html">Services</a>
+      <a class="nav-link text-white" href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Services Section -->
+  <section class="container py-5">
+    <div class="text-center mb-5">
+      <h2>What We Offer</h2>
+      <p class="lead">
+        At Coding Therapy Academy, we offer a wide range of tech programs designed to empower learners of all levels. Whether you're interested in design, programming, cybersecurity, or data science, our courses are available both in-person and online—giving you the flexibility to learn from anywhere, at your own pace.
+      </p>
+    </div>
+
+    <!-- Service 1: Graphics Designing -->
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-7">
+        <h4>Graphics Designing</h4>
+        <p>
+          Dive into the world of creativity with <strong>Adobe Photoshop</strong> for photo editing and digital art, <strong>CorelDRAW</strong> for vector illustrations and print design, and <strong>Canva</strong> for quick layouts and social media content. Perfect for aspiring designers, content creators, and entrepreneurs.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img src="4.jpg" alt="Graphics Design Tools" class="img-fluid float-md-end rounded shadow" />
+      </div>
+    </div>
+
+    <!-- Service 2: Data Science -->
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-7 order-md-2">
+        <h4>Data Science & Visualization</h4>
+        <p>Gain in-depth knowledge of spreadsheets and MySQL to analyze, visualize, and interpret data effectively.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="5.jpg" alt="Data Science" class="img-fluid float-md-start rounded shadow" />
+      </div>
+    </div>
+
+    <!-- Service 3: Front-End -->
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-7">
+        <h4>Front-End Programming</h4>
+        <p>Learn HTML, CSS, and JavaScript to build responsive and interactive websites from scratch.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="8.jpg" alt="Front-End Programming" class="img-fluid float-md-end rounded shadow" />
+      </div>
+    </div>
+
+    <!-- Service 4: Mobile Apps -->
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-7 order-md-2">
+        <h4>Mobile Application Development</h4>
+        <p>Design and develop mobile apps using Figma and Android Studio for real-world deployment.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="2.jpg" alt="Mobile App Development" class="img-fluid float-md-start rounded shadow" />
+      </div>
+    </div>
+
+    <!-- Service 5: Back-End -->
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-7">
+        <h4>Back-End Programming</h4>
+        <p>Build powerful server-side applications using C#, C++, PHP, MySQL, and Python with secure database integration.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="1.jpg" alt="Back-End Programming" class="img-fluid float-md-end rounded shadow" />
+      </div>
+    </div>
+
+    <!-- Service 6: Website Dev -->
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-7 order-md-2">
+        <h4>Website Development</h4>
+        <p>Create professional websites for e-commerce, real estate, and investment platforms with full functionality.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="6.jpg" alt="Website Development" class="img-fluid float-md-start rounded shadow" />
+      </div>
+    </div>
+
+    <!-- Service 7: Cybersecurity -->
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-7">
+        <h4>Cybersecurity & Ethical Hacking</h4>
+        <p>Learn how to protect systems, detect vulnerabilities, and ethically hack to strengthen digital security.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="9.jpg" alt="Cybersecurity" class="img-fluid float-md-end rounded shadow" />
+      </div>
+    </div>
+
+    <!-- Service 8: Video Editing -->
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-7 order-md-2">
+        <h4>Video Editing</h4>
+        <p>Use CapCut Pro to create engaging video content with transitions, effects, and storytelling techniques.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="3.jpg" alt="Video Editing" class="img-fluid float-md-start rounded shadow" />
+      </div>
+    </div>
+
+    <!-- Service 9: Online Classes -->
+    <div class="row mb-5 align-items-center">
+      <div class="col-md-7">
+        <h4>Online Classes</h4>
+        <p>Join our virtual classrooms via Zoom or Google Meet. Access live sessions, recorded tutorials, and one-on-one mentorship from anywhere in the world.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="10.jpg" alt="Online Classes" class="img-fluid float-md-end rounded shadow" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap & JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="homepage.js"></script>
+
+</body>
+</html>

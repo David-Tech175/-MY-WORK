@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOME PAGE | CODING THERAPY ACADEMY</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body class="home">
+
+  <!-- Top Contact Bar -->
+  <div class="top-bar d-flex justify-content-between align-items-center p-2 bg-light border-bottom">
+    <div class="fw-bold">📞 Call us: +234 801 234 5678</div>
+    <div class="social-icons d-flex gap-3">
+      <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook text-primary fs-4"></i></a>
+      <a href="https://www.twitter.com" target="_blank"><i class="bi bi-twitter text-info fs-4"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram text-danger fs-4"></i></a>
+      <a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube text-danger fs-4"></i></a>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="CTA LOGO.jpg" alt="Logo" width="80" height="80" class="me-2" />
+      <div class="text-white">
+        <strong>CODING THERAPY ACADEMY</strong><br />
+        <em>...the dosage that feels good...</em>
+      </div>
+    </a>
+    <div class="ms-auto d-flex gap-3">
+      <a class="nav-link text-white active" href="index.html">Home</a>
+      <a class="nav-link text-white" href="about.html">About</a>
+      <a class="nav-link text-white" href="service.html">Services</a>
+      <a class="nav-link text-white" href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero-container">
+    <img src="B.jpg" alt="Futuristic City Banner" />
+    <div class="hero-text">
+      <h1>Welcome to Coding Therapy Academy</h1>
+      <p>...the dosage that feels good...</p>
+      <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#socialModal">GET STARTED</button>
+    </div>
+  </section>
+
+  <!-- ========== SOCIAL MODAL ========== -->
+  <div class="modal fade" id="socialModal" tabindex="-1" aria-labelledby="socialModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="socialModalLabel">Choose a Social Platform</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex flex-column gap-3">
+          <a href="https://www.facebook.com" target="_blank" class="btn btn-outline-primary" onclick="showPopup('Facebook')">
+            <i class="bi bi-facebook me-2"></i> Facebook
+          </a>
+          <a href="https://www.twitter.com" target="_blank" class="btn btn-outline-info" onclick="showPopup('Twitter')">
+            <i class="bi bi-twitter me-2"></i> Twitter
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="btn btn-outline-danger" onclick="showPopup('Instagram')">
+            <i class="bi bi-instagram me-2"></i> Instagram
+          </a>
+          <a href="https://www.youtube.com" target="_blank" class="btn btn-outline-danger" onclick="showPopup('YouTube')">
+            <i class="bi bi-youtube me-2"></i> YouTube
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== BOOTSTRAP & CUSTOM JS ========== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/javascript.js"></script>
+
+</body>
+</html>
